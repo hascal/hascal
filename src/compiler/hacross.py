@@ -17,23 +17,23 @@ if __name__ == '__main__':
     parser = Parser()
     while True:
         try:
-            text = input('>>> ')
+            input = input('Hascal >>> ')
         except EOFError:
             break
-        if text == "build":
+        if input == "build":
             print("Compiling...")
             file = open("compiled.c","w")
             file.write(parser.src_imports +parser.src_before_main+ parser.src_all + parser.src_main + parser.src_end)
             file.close()
             print("Compiled succesfully!")
             continue
-        if text == "about":
+        if input == "about":
             print("Hascal Development Team\nHascal Official Website : https://hascal.github.io")
             continue
-        if text == "help":
+        if input == "help":
             print("build : compile your hascal code")
             print("about : show about inforamation")
             continue
-        if text:
+        if input:
             parser.parse(lexer.tokenize(text))
 
