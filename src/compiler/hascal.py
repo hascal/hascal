@@ -17,7 +17,7 @@ if __name__ == '__main__':
     parser = Parser()
     while True:
         try:
-            text = input('>>> ')
+            text = input('Hascal >>> ')
         except EOFError:
             break
         if text == "build":
