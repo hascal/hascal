@@ -1,12 +1,9 @@
-<<<<<<< HEAD:examples/hello.has
-use "hascal.core";
 print("what is your name ?");
 var name = ReadStr();
 
 var age = 9;
 print(ptr<name>);
-=======
+
 print("what is your name ?");
 var name = ReadStr();
 print("Hello ,",name);
->>>>>>> upstream/main:examples/hello/hello.has
