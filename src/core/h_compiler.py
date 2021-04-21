@@ -487,17 +487,29 @@ class Generator(object):
             #     <block>
             # }
             if node[0] == 'if':
+                  current_vars = self.vars
                   cond = self.walk(node[1])
+                  self.vars = current_vars + self.stdvars
                   body = self.walk(node[2])
+                  self.vars = current_vars
                   return "if(%s){\n%s\n}\n" % (cond,body)
             if node[0] == 'if_else':
+                  current_vars = self.vars
                   cond = self.walk(node[1])
+                  self.vars = current_vars + self.stdvars
                   body = self.walk(node[2])
+                  self.vars = current_vars
+                  self.vars = current_vars + self.stdvars
                   body2 = self.walk(node[3])
+                  self.vars = current_vars
                   return "if(%s){\n%s\n}else {\n%s\n}\n" % (cond,body,body2)
+
             if node[0] == 'if_else2':
+                  current_vars = self.vars
                   cond = self.walk(node[1])
+                  self.vars = current_vars + self.stdvars
                   body = self.walk(node[2])
+                  self.vars = current_vars
                   return "if(%s){\n%s\n}else %s\n" % (cond,body,self.walk(node[3]))
             #------------------------------------
             # for <name> to <expr> {
