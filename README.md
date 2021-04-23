@@ -36,12 +36,9 @@ Also, We have tested many programming languages for Hascal's Back-End, including
 DLang was the best and as you can see, we have used it for our purpose.
 
 ## Get Started
-[Download latest windows build](https://github.com/hascal/hascal/releases/tag/v1.2.5-bin)
+[Download latest Windows build](https://github.com/hascal/hascal/releases/tag/v1.2.5-bin)
 
-if you use linux , read [build documentation](https://github.com/hascal/hascal/blob/main/BUILD.md) to build Hascal.
-
-**Hascal is'nt support macOS**
-
+if you use Linux or MacOS, read [build documentation](https://github.com/hascal/hascal/blob/main/BUILD.md) to build Hascal.
 
 ## Documentation
 > You can find documentations on installation and using Hascal [here](https://github.com/hascal/hascal/tree/main/docs)
