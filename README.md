@@ -58,6 +58,7 @@ You can see Hascal syntax example [here](https://github.com/hascal/hascal/blob/m
 
 ## Thanks
 This project exists thanks to all the people who contribute. 
+!Loop Contributors](https://contrib.rocks/image?repo=hascal/hascal)
 
 ## License
 The compiler and the standard libraries are licensed under the **"GNU general public license"**,
